@@ -1,0 +1,441 @@
+{% load static %}
+
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>My Pets!</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <link href="{% static 'static/img/pets.png' %}" rel="icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/icofont/icofont.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/venobox/venobox.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top">
+    <div class="container-fluid d-flex">
+
+        <div class="logo mr-auto">
+            <h1 class="text-light"><a href="#"><span>My Pets!</span></a></h1>
+        </div>
+
+        <nav class="nav-menu d-none d-lg-block">
+            <ul>
+                <li class="active"><a href="#header">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">FindOuts</a></li>
+                <li><a href="#tracking">EasyLook</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+
+                {% if user.is_authenticated %}
+                <li><a href="{% url 'profile' %}">Profile</a></li>
+                <li><span><a href="{% url 'logout' %}">Logout</a></span></li>
+                {% else %}
+                <li><span><a href="{% url 'register' %}">Register</a></span></li>
+                <li><span><a href="{% url 'login' %}">Login</a></span></li>
+                {% endif %}
+            </ul>
+
+        </nav><!-- .nav-menu -->
+
+    </div>
+</header><!-- End Header -->
+
+<!-- ======= Hero Section ======= -->
+
+<section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1">
+                <h1>Welcome Pet Lover!</h1>
+                <h2><span> Hello, {{request.user}}</span></h2>
+                <h2>Here We Meet, <br>
+                    You Have Peace Of Mind.</h2>
+                <a href="#contact" class="card-des">Get In Touch</a>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2 hero-img">
+                <img src="static/img/nature.png" class="img-fluid animated" alt="">
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- End Hero -->
+
+<main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+        <div class="container">
+
+            <div class="row justify-content-between">
+                <div class="col-lg-5 d-flex align-items-center justify-content-center about-img">
+                    <img src="static/img/Blue.jpg" class="img-fluid" alt="" data-aos="zoom-in">
+                </div>
+                <div class="col-lg-6 pt-5 pt-lg-0">
+                    <h3 data-aos="fade-up">What Do We Provide!</h3>
+                    <p data-aos="fade-up" data-aos-delay="100">
+                        Helping in maintaining your loyalty with care and love, with providing information and service.
+                    </p>
+                    <div class="row">
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                            <i class="icofont-search-2"></i>
+                            <h4>All Searches At One Place</h4>
+                            <p>We help you to find all kinds of useful facalities in caring your pet from its healthcare
+                                to
+                                hairstyle!</p>
+                        </div>
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                            <i class="icofont-map-pins"></i>
+                            <h4>EasyLook For Your Mate</h4>
+                            <p>We use GPS tracking system to track and locate your pet at anytime!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+        <div class="container">
+
+            <div class="section-title" data-aos="fade-up">
+                <h2>FindOuts</h2>
+                <p>Find some useful for your loyal online</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="card text-center" style="width:18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title ">Doctor</h5>
+                            <li><span class="classy">Be Safe</span></li>
+                            <button onclick="valuetomap(this.id)" class="card-des" value="Pet Doctor" id="1">Nearby
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="card text-center" style="width:18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title ">Groomer</h5>
+                            <li><span class="classy">Fine Look</span></li>
+                            <button onclick="valuetomap(this.id)" class="card-des" value="Pet Grommer" id="2">Nearby
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="card text-center" style="width:18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title ">Trainer</h5>
+                            <li><span class="classy">Youthful</span></li>
+                            <button onclick="valuetomap(this.id)" class="card-des" value="Pet Trainer" id="3">Nearby
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="card text-center" style="width:18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Shop</h5>
+                            <li><span class="classy">I'm Hungry</span></li>
+                            <button onclick="valuetomap(this.id)" class="card-des" value="Pet Food Shop" id="4">Nearby
+                            </button>
+                            <div class="dropdown div-inline">
+                                <button class="btn dropdown-toggle " type="button" id="dropdownMenuButton"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="https://www.amazon.com" methods="post">Amazon</a>
+                                    <a class="dropdown-item" href="https://www.flipcart.com" methods="post">Flipcart</a>
+                                    <a class="dropdown-item" href="https://www.petsworld.com"
+                                       methods="post">Petsworld</a>
+                                    <a class="dropdown-item" href="https://www.pupkart.com" methods="post">Pupkart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section><!-- End Services Section -->
+
+
+    <!------------Start Easy Look Section--------------->
+
+
+    <section id="tracking" class="tracking section-bg">
+        <div class="container">
+            <div class=" row justify-content-between">
+                <div class=" track-div section-title" data-aos="fade-up">
+                    <h2>Easy Look</h2>
+                    <p>Where is your pet now!</p>
+                    <input type="text" placeholder="Enter the Track Link.." id="text">
+                    <input type="submit" class="card-des" value="Let's track"
+                           onclick="javascript: window.open(document.getElementById('text').value);">
+                </div>
+                <div class="col-lg-5 d-flex align-items-center justify-content-center about-img">
+                    <img src="static/img/dog_walk.png" class="img-fluid" alt="" data-aos="zoom-in">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!------------ End Easy Look Section--------------->
+
+
+    <!-- ======= Contact Us Section ======= -->
+    <section id="contact" class="contact">
+        <div class="container">
+
+            <div class="section-title" data-aos="fade-up">
+                <h2>Contact Us</h2>
+                <p>Get Started Here</p>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-5 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                    <div class="info">
+                        <div class="address">
+                            <i class="icofont-google-map"></i>
+                            <h4>Location:</h4>
+                            <p> Main Street,Bangalore,Karnataka,India</p>
+                        </div>
+
+                        <div class="email">
+                            <i class="icofont-envelope"></i>
+                            <h4>Email:</h4>
+                            <p>information@example.com</p>
+                        </div>
+
+                        <div class="phone">
+                            <i class="icofont-phone"></i>
+                            <h4>Call:</h4>
+                            <p>+123456789</p>
+                        </div>
+                        <div class="animated" id="#dan">
+                            <img src="static/img/Birds.svg" style="border:0; width: 100%; height: 290px;">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+                    <form action="https://gmail.us10.list-manage.com/subscribe/post?u=c2a7c0b1ae833d02b0a69388d&amp;id=6545a76a74"
+                          method="post" role="form" class="php-email-form validate"
+                          id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="FNAME">Your First Name</label>
+                                <input type="text" name="FNAME" class="form-control" id="FNAME" data-rule="minlen:4"
+                                       data-msg="Please enter at least 4 chars"/>
+                                <div class="validate"></div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="LNAME">Your Last Name</label>
+                                <input type="text" name="LNAME" class="form-control" id="LNAME" data-rule="minlen:4"
+                                       data-msg="Please enter at least 4 chars"/>
+                                <div class="validate"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="EMAIL">Your Email</label>
+                            <input type="email" class="form-control" name="EMAIL" id="email" data-rule="email"
+                                   data-msg="Please enter a valid email"/>
+                            <div class="validate"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="SUBJECT">Subject</label>
+                            <input type="text" class="form-control" name="SUBJECT" id="subject" data-rule="minlen:4"
+                                   data-msg="Please enter at least 8 chars of subject"/>
+                            <div class="validate"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="MESSAGE">Message</label>
+                            <textarea class="form-control" name="MESSAGE" rows="10" data-rule="required" id="message"
+                                      data-msg="Please write something for us"></textarea>
+                            <div class="validate"></div>
+                        </div>
+                        <div id="mce-responses" class="clear">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Contact Us Section -->
+
+</main><!-- End #main -->
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+
+    <div class="footer-newsletter" data-aos="fade-up">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <h4>Join Our Newsletter</h4>
+                    <form action="{% url 'subscribe'%}" method="post">
+                        {% csrf_token %}
+                        {{ form }}
+                        <input type="submit" value="Subscribe">
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6 footer-contact" data-aos="fade-up" data-aos-delay="100">
+                    <h3>My Pets!</h3>
+                    <p>
+                        Main Street <br>
+                        Bangalore,Karnataka, <br>
+                        India <br><br>
+                        <strong>Phone:</strong> +123456789<br>
+                        <strong>Email:</strong> information@example.com<br>
+                    </p>
+                </div>
+
+                <div class="col-lg-4 col-md-6 footer-links" data-aos="fade-up" data-aos-delay="200">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6 footer-links" data-aos="fade-up" data-aos-delay="400">
+                    <h4>Our Social Networks</h4>
+                    <p>We Care , You Care Here</p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-4">
+        <div class="copyright">
+            &copy; Copyright <strong><span>My Pets!</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+        </div>
+    </div>
+</footer><!-- End Footer -->
+
+<a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="static/vendor/jquery/jquery.min.js"></script>
+<script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="static/vendor/jquery.easing/jquery.easing.min.js"></script>
+<script src="static/vendor/php-email-form/validate.js"></script>
+<script src="static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="static/vendor/venobox/venobox.min.js"></script>
+<script src="static/vendor/owl.carousel/owl.carousel.min.js"></script>
+<script src="static/vendor/aos/aos.js"></script>
+
+<!-- Template Main JS File -->
+<script src="static/js/main.js"></script>
+<script>
+
+    function valuetomap(clicked_id){
+    var tomap = document.getElementById(clicked_id).value;
+    localStorage.setItem("myValue", tomap);
+    window.location.href="maps";
+    }
+
+</script>
+
+<style>
+   .card-des{
+   border:1px solid #173e43;
+  border-radius: 100px;
+  margin: 0px 5px;
+  padding: 12px 35px;
+  outline: none;
+  color: #173e43;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+  }
+
+  .card-des:hover{
+  color:#fff;
+  background: #173e43;
+  text-decoration: none;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+     }
+
+  .div-inline{
+  display:inline-block;
+  }
+
+  .card-body h5{
+  color: black;
+  }
+
+</style>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+

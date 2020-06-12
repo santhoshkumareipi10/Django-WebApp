@@ -1,0 +1,178 @@
+{% load static %}
+{% load crispy_forms_tags %}
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+
+    <link href="{% static 'static/img/pets.png' %}" rel="icon">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/icofont/icofont.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/venobox/venobox.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <style>
+
+
+body{
+    font-family: 'Varela Round', sans-serif;
+	background-color: #dddfd4;
+}
+
+
+a {
+  color: #007bff;
+}
+
+a:hover {
+  color: #0b6bd3;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, .font-primary {
+  font-family: 'Gotu', sans-serif;
+
+}
+
+
+#villain {
+  height: 72px;
+  transition: all 0.5s;
+  z-index: 997;
+  transition: all 0.5s;
+  padding: 15px 0;
+  background: #fff ;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#villain .logo h1 {
+  font-size: 30px;
+  margin: 0;
+  padding: 6px 0;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+#villain .logo h1 a, #villain .logo h1 a:hover{
+  color: #173e43 !important;
+  text-decoration: none;
+}
+
+form{
+margin-top: 90px;
+}
+
+.card{
+	width: 400px;
+	margin: 0 auto;
+	margin-top: 100px;
+	border: 2px solid #e7e7e7;
+	border-radius: 5px;
+	text-align: center;
+	padding: 20px;
+	background-color: #F8F8F8!important;
+}
+
+.profile_pic{
+	display: block;
+	border-radius: 50%;
+	margin: 10px auto;
+	width: 200px;
+	border: 2px solid #e7e7e7;
+
+}
+
+hr{
+	margin: 20px;
+	background-color: #eaeaea;
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+
+<header id="villain" class="fixed-top">
+    <div class="container-fluid d-flex">
+        <div class="logo mr-auto">
+            <h1 class="text-light"><a href="#"><span>My Profile</span></a></h1>
+        </div>
+        <nav class="nav-menu d-none d-lg-block">
+            <ul>
+                <li><a href="#edit">Edit</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+<div class="container">
+    <div class="card">
+        <img class="profile_pic front word1_front" src="{{user.profile.image.url}}">
+        <h3>{{user.username}}</h3>
+        <h5>{{user.email}}</h5>
+        <h5>{{user.profile.notes}}</h5>
+        <hr>
+        <h4>Calendar</h4>
+    </div>
+
+    <div class="card">
+        <img class="profile_pic back word1_back" src="{{user.profile.pet_image.url}}">
+        <h3>{{user.profile.pet_name}}</h3>
+        <h5> {{user.profile.pet}} , {{user.profile.gender}}</h5>
+        <h5>{{user.profile.breed}}</h5>
+        <h5>{{user.profile.pet_color}} , {{user.profile.pet_birthday}}</h5>
+        <hr>
+    </div>
+
+    <section id="edit">
+        <div class="container ">
+            <form  method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                <fieldset class="form-group">
+                    <div class="section-title" data-aos="fade-up">
+                        <h2>Edit Profile</h2>
+                        <p>Also your Pet's!</p>
+                    </div>
+                        {{ u_form|crispy }}
+                        {{ p_form|crispy }}
+                </fieldset>
+                    <button class="btn btn-outline-info" type="submit">Update</button>
+            </form>
+        </div>
+    </section>
+</div>
+
+<a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="../static/vendor/jquery/jquery.min.js"></script>
+<script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../static/vendor/jquery.easing/jquery.easing.min.js"></script>
+<script src="../static/vendor/php-email-form/validate.js"></script>
+<script src="../static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="../static/vendor/venobox/venobox.min.js"></script>
+<script src="../static/vendor/owl.carousel/owl.carousel.min.js"></script>
+<script src="../static/vendor/aos/aos.js"></script>
+
+<!-- Template Main JS File -->
+<script src="../static/js/main.js"></script>
+</body>
+</html>
