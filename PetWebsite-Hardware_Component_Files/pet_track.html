@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>My pet location</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+
+      function initMap() {
+
+        var myLatLng = {lat: 13.406330, lng: 76.163192};
+        var url = "https://pettttttrack.000webhostapp.com/api/readall.php";
+        $.getJSON(url, function(data) {
+                  var val= data;
+                  var latituded=(data['gpstable'][(Object.keys(data['gpstable']).length)-1]['latitude']);
+                  var longituded=(data['gpstable'][(Object.keys(data['gpstable']).length)-1]['longitude']); 
+                });
+        var LatLng = {lat: 'latituded', lng: 'longituded'};    
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 14,
+          center: myLatLng
+        });
+
+        var marker = new google.maps.Marker({
+          position: LatLng,
+          map: map,
+          title: 'My pet'
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
+  </body>
+</html>
