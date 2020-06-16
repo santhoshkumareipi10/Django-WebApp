@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ed8e6ccb-182b-4fa5-9d5c-81a7854400f8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/products/templates/products/calendar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/templates/products/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/products/templates/products/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/templates/products/map.html" beforeDir="false" afterPath="$PROJECT_DIR$/products/templates/products/map.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/templates/products/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/products/templates/products/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/views.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1YkvozXR8YXcZyr3G4XGAtroOLY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/img" />
+    <property name="settings.editor.selected.configurable" value="reference.idesettings.emmet" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\santh\PycharmProjects\PetWebsite\products\media\profile_pics" />
+      <recent name="C:\Users\santh\PycharmProjects\PetWebsite\products" />
+      <recent name="C:\Users\santh\PycharmProjects\PetWebsite\products\templates\products" />
+      <recent name="C:\Users\santh\PycharmProjects\PetWebsite\templates" />
+      <recent name="C:\Users\santh\PycharmProjects\PetWebsite\templates\products" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\santh\PycharmProjects\PetWebsite\static\img" />
+      <recent name="C:\Users\santh\PycharmProjects\PetWebsite\products\media\profile_pics" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ed8e6ccb-182b-4fa5-9d5c-81a7854400f8" name="Default Changelist" comment="" />
+      <created>1583499589454</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583499589454</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="137" y="38" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590680286982">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="137" y="38" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1590680286982" />
+    <state x="442" y="186" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1591984821449">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="442" y="186" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1591984821449" />
+    <state x="363" y="111" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1583724967440">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="363" y="111" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.768@0.0.1366.768" timestamp="1583724967440" />
+    <state x="413" y="130" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1591984980741">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="413" y="130" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768@0.0.1366.768" timestamp="1591984980741" />
+    <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1583648114687">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1583648114687" />
+    <state x="264" y="16" key="SettingsEditor" timestamp="1590987796035">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="264" y="16" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1590987796034" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1591250854732">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1366.768@0.0.1366.768" timestamp="1591250854732" />
+    <state x="358" y="246" key="com.intellij.ide.util.TipDialog" timestamp="1592284543633">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="358" y="246" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1592284543633" />
+    <state x="0" y="83" width="736" height="685" key="find.popup" timestamp="1591253041207">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="0" y="83" width="736" height="685" key="find.popup/0.0.1366.768@0.0.1366.768" timestamp="1591253041207" />
+    <state x="133" y="19" key="refactoring.ChangeSignatureDialog" timestamp="1592105944599">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="133" y="19" key="refactoring.ChangeSignatureDialog/0.0.1366.768@0.0.1366.768" timestamp="1592105944599" />
+    <state x="495" y="370" width="672" height="678" key="search.everywhere.popup" timestamp="1591027699408">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="495" y="370" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1591027699408" />
+  </component>
+</project>
