@@ -1,8 +1,4 @@
 from django.shortcuts import render, redirect
-from django.urls import reverse_lazy
-from django.utils.safestring import mark_safe
-from django.views.generic import ListView
-
 from .forms import CreateUserForm, UserUpdateForm, ProfileUpdateForm
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
@@ -14,6 +10,7 @@ from .models import Signup
 
 import json
 import requests
+
 
 MAILCHIMP_API_KEY = settings.MAILCHIMP_API_KEY
 MAILCHIMP_DATA_CENTER = settings.MAILCHIMP_DATA_CENTER
@@ -63,10 +60,6 @@ def home(request):
 @login_required
 def maps(request):
     return render(request, 'products/map.html')
-
-
-def tracking():
-    pass
 
 
 def profile(request):
@@ -125,3 +118,7 @@ def loginPage(request):
 def logoutUser(request):
     logout(request)
     return redirect('login')
+
+
+def calendar(request):
+    return render(request, 'products/calendar.html')

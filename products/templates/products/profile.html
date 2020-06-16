@@ -32,19 +32,12 @@ body{
 }
 
 
-a {
-  color: #007bff;
-}
-
-a:hover {
-  color: #0b6bd3;
-  text-decoration: none;
-}
 
 h1, h2, h3, h4, h5, h6, .font-primary {
   font-family: 'Gotu', sans-serif;
 
 }
+
 
 
 #villain {
@@ -86,6 +79,13 @@ margin-top: 90px;
 	background-color: #F8F8F8!important;
 }
 
+.card a{
+    text-decoration: none;
+    font-size: 15px;
+    color:#212529;
+}
+
+
 .profile_pic{
 	display: block;
 	border-radius: 50%;
@@ -99,6 +99,7 @@ hr{
 	margin: 20px;
 	background-color: #eaeaea;
 }
+
 
 
 
@@ -130,8 +131,9 @@ hr{
         <h5>{{user.email}}</h5>
         <h5>{{user.profile.notes}}</h5>
         <hr>
-        <h4>Calendar</h4>
+        <a href="{% url 'calendar' %}">Calendar</a>
     </div>
+
 
     <div class="card">
         <img class="profile_pic back word1_back" src="{{user.profile.pet_image.url}}">
@@ -144,17 +146,17 @@ hr{
 
     <section id="edit">
         <div class="container ">
-            <form  method="POST" enctype="multipart/form-data">
+            <form method="POST" enctype="multipart/form-data">
                 {% csrf_token %}
                 <fieldset class="form-group">
                     <div class="section-title" data-aos="fade-up">
                         <h2>Edit Profile</h2>
                         <p>Also your Pet's!</p>
                     </div>
-                        {{ u_form|crispy }}
-                        {{ p_form|crispy }}
+                    {{ u_form|crispy }}
+                    {{ p_form|crispy }}
                 </fieldset>
-                    <button class="btn btn-outline-info" type="submit">Update</button>
+                <button class="btn btn-outline-info" type="submit">Update</button>
             </form>
         </div>
     </section>

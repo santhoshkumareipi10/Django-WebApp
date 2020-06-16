@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed8e6ccb-182b-4fa5-9d5c-81a7854400f8" name="Default Changelist" comment="" />
+    <list default="true" id="ed8e6ccb-182b-4fa5-9d5c-81a7854400f8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/products/templates/products/calendar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/templates/products/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/products/templates/products/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/templates/products/map.html" beforeDir="false" afterPath="$PROJECT_DIR$/products/templates/products/map.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/templates/products/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/products/templates/products/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,8 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -87,18 +97,18 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1366.768@0.0.1366.768" timestamp="1591250854732" />
-    <state x="358" y="246" key="com.intellij.ide.util.TipDialog" timestamp="1591983960938">
+    <state x="358" y="246" key="com.intellij.ide.util.TipDialog" timestamp="1592284543633">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="358" y="246" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1591983960938" />
+    <state x="358" y="246" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1592284543633" />
     <state x="0" y="83" width="736" height="685" key="find.popup" timestamp="1591253041207">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="0" y="83" width="736" height="685" key="find.popup/0.0.1366.768@0.0.1366.768" timestamp="1591253041207" />
-    <state x="133" y="19" key="refactoring.ChangeSignatureDialog" timestamp="1591028626697">
+    <state x="133" y="19" key="refactoring.ChangeSignatureDialog" timestamp="1592105944599">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="133" y="19" key="refactoring.ChangeSignatureDialog/0.0.1366.768@0.0.1366.768" timestamp="1591028626697" />
+    <state x="133" y="19" key="refactoring.ChangeSignatureDialog/0.0.1366.768@0.0.1366.768" timestamp="1592105944599" />
     <state x="495" y="370" width="672" height="678" key="search.everywhere.popup" timestamp="1591027699408">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
