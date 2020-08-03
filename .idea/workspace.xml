@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed8e6ccb-182b-4fa5-9d5c-81a7854400f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/products/templates/products/calendar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/templates/products/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/products/templates/products/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/petwebsite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/petwebsite/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/templates/products/calendar.html" beforeDir="false" afterPath="$PROJECT_DIR$/products/templates/products/calendar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/products/templates/products/map.html" beforeDir="false" afterPath="$PROJECT_DIR$/products/templates/products/map.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/templates/products/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/products/templates/products/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +38,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/static/img" />
-    <property name="settings.editor.selected.configurable" value="reference.idesettings.emmet" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -69,38 +67,30 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="137" y="38" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590680286982">
+    <state x="137" y="38" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596081078156">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="137" y="38" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1590680286982" />
+    <state x="137" y="38" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1596081078156" />
     <state x="442" y="186" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1591984821449">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="442" y="186" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1591984821449" />
-    <state x="363" y="111" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1583724967440">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="363" y="111" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.768@0.0.1366.768" timestamp="1583724967440" />
     <state x="413" y="130" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1591984980741">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="413" y="130" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768@0.0.1366.768" timestamp="1591984980741" />
-    <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1583648114687">
+    <state x="264" y="16" key="SettingsEditor" timestamp="1595664853931">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1583648114687" />
-    <state x="264" y="16" key="SettingsEditor" timestamp="1590987796035">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="264" y="16" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1590987796034" />
+    <state x="264" y="16" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1595664853931" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1591250854732">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1366.768@0.0.1366.768" timestamp="1591250854732" />
-    <state x="358" y="246" key="com.intellij.ide.util.TipDialog" timestamp="1592284543633">
+    <state x="358" y="246" key="com.intellij.ide.util.TipDialog" timestamp="1596083694211">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="358" y="246" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1592284543633" />
+    <state x="358" y="246" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1596083694211" />
     <state x="0" y="83" width="736" height="685" key="find.popup" timestamp="1591253041207">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
